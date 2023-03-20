@@ -7,7 +7,8 @@
 //  greater<>(),
 //  less_equal<>(),
 //  greater_equal<>()
-// Przypomnij sobie pojemnik std::set. Następnie napisz programik korzystający ze zbioru liczb posortowanego odwrotnie (czyli malejąco).
+// Przypomnij sobie pojemnik std::set.
+// Następnie napisz programik korzystający ze zbioru liczb posortowanego odwrotnie (czyli malejąco).
 
 #include "iostream"
 #include "set"

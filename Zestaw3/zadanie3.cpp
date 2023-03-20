@@ -2,6 +2,18 @@
 // Created by Arek on 16.03.2023.
 //
 
+// W przeciwieństwie do szablonów funkcji, szablony klas nie mogą być przeciążane, a jedynie specjalizowane.
+//  Oznacza to, że w programie może istnieć tylko jeden szablon podstawowy o danej nazwie.
+//  Proszę zaimplementować specjalizację częściową, która jest dozwolona tylko dla szablonów
+//  klas, dla podanych podzbiorów parametrów:
+//
+// Stack<T,666>
+// Stack<T*,N>
+// Stack<double ,N>
+// Stack<int *,N>
+// Stack<double,666>
+// Stack<double *,44>
+
 #include <iostream>
 
 template <typename T, int N>

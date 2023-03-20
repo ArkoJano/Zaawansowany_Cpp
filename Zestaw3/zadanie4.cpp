@@ -2,7 +2,7 @@
 // Created by Arek on 19.03.2023.
 //
 
-//Zaimplementować szablon klasy Stack wraz z jej specjalizacjami tak aby „działała” ze zwykłymi tablicami oraz kontenerami.
+// Zaimplementować szablon klasy Stack wraz z jej specjalizacjami tak aby „działała” ze zwykłymi tablicami oraz kontenerami.
 #include "iostream"
 #include "vector"
 

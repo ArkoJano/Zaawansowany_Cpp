@@ -2,7 +2,8 @@
 // Created by Arek on 16.03.2023.
 //
 
-// Podaj implementacje funkcji max dla różnego typu argumentów. Skorzystaj z możliwości przeciążania i specjalizacji szablonów funkcji
+// Podaj implementacje funkcji max dla różnego typu argumentów.
+// Skorzystaj z możliwości przeciążania i specjalizacji szablonów funkcji
 #include <iostream>
 #include <cstring>
 
