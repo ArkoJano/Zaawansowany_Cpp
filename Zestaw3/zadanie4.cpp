@@ -38,34 +38,43 @@ public:
     }
 };
 
-template <typename T, int N, typename E> class Stack{
-private:
-    E data;
+template<typename T,int N,template<typename E> class Sequence>
+class Stack<T,N,Sequence<T> > {
+    Sequence<T> _rep;
 public:
-    Stack(){
-        std::cout <<"Stack for containers created!"<<std::endl;
-    };
-    void push(T x) {
-        if (data.size() < N - 1){
-            data.push_back(x);
-        } else {
-            std::cerr << "Stack overflow\n";
-        }
-    }
-
-    T pop() {
-        if (!data.empty()) {
-            return data.pop_back();
-        }
-        else {
-            std::cerr << "Stack underflow\n";
-            return T();
-        }
-    }
-    bool is_empty(){
-        return data.empty() ;
-    }
+    void push(T e) {_rep.push_back(e);};
+    T pop() {T top = _rep.top();_rep.pop_back();return top;}
+    bool is_empty() const {return _rep.empty();}
 };
+//
+//template <typename T, int N, typename E> class Stack{
+//private:
+//    E data;
+//public:
+//    Stack(){
+//        std::cout <<"Stack for containers created!"<<std::endl;
+//    };
+//    void push(T x) {
+//        if (data.size() < N - 1){
+//            data.push_back(x);
+//        } else {
+//            std::cerr << "Stack overflow\n";
+//        }
+//    }
+//
+//    T pop() {
+//        if (!data.empty()) {
+//            return data.pop_back();
+//        }
+//        else {
+//            std::cerr << "Stack underflow\n";
+//            return T();
+//        }
+//    }
+//    bool is_empty(){
+//        return data.empty() ;
+//    }
+//};
 
 
 int main(){

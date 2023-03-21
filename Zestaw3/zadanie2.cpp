@@ -20,12 +20,11 @@ template <> double convert<double, double> (double u){
 
 int main(){
 
-    double one_d = 1.0, two_d = 2;
+    double one_d = 1.0;
 
     std::cout << "one_d = " << one_d << std::endl;
-    std::cout << "two_d = " << two_d << std::endl;
 
 
-    std::cout << "convert<int, double>(one) = "<< convert<int, double>(one_d) << std::endl;
-    std::cout << "convert<double, int>(one_d) = "<< convert<double, int>(one_d) << std::endl;
+    std::cout << "convert<int>(one_d) = "<< convert<int>(one_d) << std::endl;
+    std::cout << "convert<double>(one_d) = "<< convert<double>(one_d) << std::endl;
 }
