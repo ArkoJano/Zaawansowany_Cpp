@@ -19,7 +19,7 @@ class MyClass {};
 
 int main() {
     std::cout << std::boolalpha;
-    std::cout << is_class<MyClass>::value << std::endl;  // true
-    std::cout << is_class<int>::value << std::endl;      // false
+    std::cout << is_class<MyClass>::value << std::endl;
+    std::cout << is_class<int>::value << std::endl;
     return 0;
 }
