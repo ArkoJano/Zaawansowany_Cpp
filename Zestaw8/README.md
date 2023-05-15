@@ -1,6 +1,6 @@
-Zaawansowane techniki programowania obiektowego w C++
+# Zaawansowane techniki programowania obiektowego w C++
 
-Zestaw nr 8
+## Zestaw nr 8
 
 1. Zaimplementuj szablon funkcji `integrate`, która jako pierwszy argument przyjmuje dowolny funktor. Funkcja integrate ma dokonywać całkowania w podanym zakresie np.:
 

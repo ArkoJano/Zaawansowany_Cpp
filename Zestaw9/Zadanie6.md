@@ -1,0 +1,3 @@
+### weak_ptr
+To specjalny rodzaj inteligentnego wskaźnika który umożliwia dostęp do wskaźnika typu `shared_ptr` bez zwiększania jego licznika odwołań, przez co nie jest właścicielem zasobu na który wskazuje.
+Jego głównym celem jest jest zapobieganie pętli odwołań, które mogą prowadzić do wycieków pamięci, a które powstają gdy dwa lub więcej obiektów `shared_ptr` wskazuje na siebie nawzajem. W takim przypadku licznik odwołań każdego obiektu nigdy nie spadnie do zera i zasób nigdy nie zostanie zwolniony. 
